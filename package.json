@@ -1,17 +1,17 @@
 {
-  "name": "49432-keksogram",
+  "name": "keksogram",
   "version": "0.1.0",
   "private": true,
   "description": "Обучающий проект «keksogram» от HTML Academy",
-  "author": "Елена Ганенкова",
+  "author": "Bykov Denis",
   "repository": {
     "type": "git",
-    "url": "git://github.com/js-htmlacademy/49432-keksogram.git"
+    "url": "git://github.com/BykovDenis/jsgram.git"
   },
   "bugs": {
-    "url": "https://github.com/js-htmlacademy/49432-keksogram/issues"
+    "url": "https://github.com/BykovDenis/jsgram/issues"
   },
-  "homepage": "https://github.com/js-htmlacademy/49432-keksogram",
+  "homepage": "https://github.com/BykovDenis/jsgram",
   "dependencies": {
     "eslint": "^1.9.0",
     "http-server": "^0.8.5"
