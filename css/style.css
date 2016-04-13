@@ -1,0 +1,20 @@
+body{
+
+  width: 100%;
+  font: 400 20px/24px 'Trebuchet MS',Arial,sans-serif;
+
+}
+
+.layout{
+
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+.frmHotel__header{
+
+  text-align: center;
+
+}
