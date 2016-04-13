@@ -24,7 +24,7 @@
 
 Репозиторий создан для обучения на интенсивном онлайн-курсе «[Базовый JavaScript](https://htmlacademy.ru/js_intensive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/js-htmlacademy/49432-keksogram.svg?branch=master
-[travis-url]: https://travis-ci.org/js-htmlacademy/49432-keksogram
-[dependency-image]: https://david-dm.org/js-htmlacademy/49432-keksogram.svg?style=flat-square
-[dependency-url]: https://david-dm.org/js-htmlacademy/49432-keksogram
+[travis-image]: https://travis-ci.org/BykovDenis/keksogram.svg?branch=master
+[travis-url]: https://travis-ci.org/BykovDenis/keksogram
+[dependency-image]: https://david-dm.org/BykovDenis/keksogram.svg?style=flat-square
+[dependency-url]: https://david-dm.org/BykovDenis/keksogram
