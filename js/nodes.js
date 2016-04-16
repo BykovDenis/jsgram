@@ -34,7 +34,7 @@ pictures.forEach(function (pictures) {
  * @param {Object} data
  * @return {Element}
  */
-function getElementFromTemplate(data){
+function getElementFromTemplate(data) {
 
   var template = document.querySelector('#picture-template');
   var element = template.content.children[0].cloneNode(true);
@@ -43,14 +43,22 @@ function getElementFromTemplate(data){
   element.querySelector('.picture-likes').textContent = data.likes;
 
   var img = new Image();
+  var ONLOAD_TIMEMOUT = 10000;
 
-  img.onload = function(){
 
-    element.style.backgroundImage = 'url(http://localhost:8080/keksogram/'+img.src+')';
+  var imageLoadTimeOut = setTimeout(function () {
+    img.src='';
+  }, ONLOAD_TIMEMOUT);
+
+
+  img.onload = function () {
+    clearTimeout(imageLoadTimeOut);
+    element.style.backgroundImage = 'url(' + img.src + ')';
 
   };
 
-  img.src = 'http://localhost:8080/keksogram/'+data.url;
+
+  img.src = './' + data.url;
 
 
   return element;
