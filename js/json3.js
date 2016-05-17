@@ -1,11 +1,8 @@
 /**
  * Created by Denis on 21.04.2016.
  */
-/**
- * Created by Denis on 14.04.2016.
- */
-'use strict';
 
+'use strict';
 
 var arrPhotoes;
 var tmplElement = document.getElementById("picture-template");
@@ -15,7 +12,9 @@ var photoes = [];
 var replace;
 var TIME_OUT = 100;
 
-//1. Получить массив с фото
+/**
+* Блок загрузки  данных из JSON файла 
+*/
 
 var xhr = new XMLHttpRequest();
 
@@ -54,6 +53,12 @@ window.addEventListener('scroll',function () {
 
 });
 
+/**
+ * получить массив с фото
+ * @param   {array} photoes
+ * @param   {integer} pageNumber
+ * @returns {array} photoes
+ */
 
 function getPhotoes(photoes, pageNumber) {
 
@@ -65,7 +70,10 @@ function getPhotoes(photoes, pageNumber) {
 
 }
 
-
+/**
+ * Добавить элементы во фрагмент документа
+ * @param {array} photoes
+ */
 function getElementsFromPhoto(photoes) {
 
   if(replace > 0) {
@@ -86,7 +94,11 @@ function getElementsFromPhoto(photoes) {
 
 }
 
-
+/**
+ * Заполнить контентом
+ * @param {object} node
+ * @param {object} element
+ */
 function setContentIntoNodes(node, element){
 
   node.querySelector(".picture-comments").textContent = element.comments;
@@ -119,6 +131,11 @@ for(var i = 0; i < clickableElement.length; i++){
 
 }
 
+/**
+ * @private
+ * @param {object} evt
+ */
+
 function _onClick(evt){
 
   var clicked = document.querySelector('.clicked');
@@ -144,7 +161,9 @@ filters.addEventListener('click', function(evt){
 
 });
 
-
+/**
+ * Кастомное событие
+ */
 function customEvent(){
 
   var cst_evt = document.createEvent('CustomEvent');
@@ -162,7 +181,10 @@ function customEvent(){
 }
 
 
-
+/**
+ * Работа с фильтрами
+ * @param {[[Type]]} id [[Description]]
+ */
 function setActiveFilter(id){
 
   replace = 1;
